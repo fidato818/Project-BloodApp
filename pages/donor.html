@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- FONTAWSOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="icon" type="" sizes="16x16" href="../img/Medical-Sign-icon.png">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <title>Donor</title>
+</head>
+
+<body style="background-color:teal">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark " style="color:rgb(192, 15, 3)">
+        <a class="navbar-brand" href="../index.html"><b>Donor</b></a>
+        <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav ml-auto">
+                <!-- THIS ml-auto is that 'below li links are align-right' -->
+                <li class="nav-item dropdown name" id='drop' style="display:none">
+                    <a style="color:white" class="nav-link dropdown-toggle" href="#" id="name" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="nav-link" style="color:black !important" >
+                            <i class="fas fa-sign-out-alt" onclick="btnLogOut()">
+                                Logout</i>
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link name" style="color:white" id="signinDonor" href="./logindonor.html">SignIn</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Donor</h2>
+        <table class="table">
+            <thead class="table-dark">
+                <tr class="text-center">
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                    <th>Blood Group</th>
+                    <th>Email</th>
+                    <th colspan="2">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="donor" class="text-center">
+
+            </tbody>
+
+        </table>
+        <div class="" id="permission">
+
+        </div>
+        <!-- USER DATA ON MODAL START -->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="card-title" id="donorName"></h5>
+                        <!-- <img class="card-img-top img-fluid" src="" alt="..." id="imgAd"> -->
+                        <h5 class="card-title" id="donorAddress"></h5>
+                        <h5 class="card-title" id="donorMobile"></h5>
+                        <h5 class="card-title" id="conditionModal"></h5>
+                        <p class="card-text" id="descriptionModal"></p>
+                        <p class="card-text" id="priceModal"></p>
+                        <p class="card-text" id="locationModal"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary" onclick='startchat()'>Start Chat</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- USER DATA ON MODAL END -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="../js/donor.js"></script>
+</body>
+
+</html>

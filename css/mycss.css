@@ -1,0 +1,185 @@
+.f{
+    color: red;
+}
+
+.name{
+    font-weight: bold;
+    color: white !important;
+    transition: 0.2s  ease-in-out !important;
+}
+.name:hover {
+    color: red !important;
+    
+}
+.as{
+    /* font-weight:  */
+    color: red !important;
+    transition: 0.3s ease-in-out !important;
+}
+ .as:hover{
+    color: white !important;
+    
+}
+.nav-item{
+    margin: 5px;
+}
+.jumbotron{
+    /* background-color: white !important; */
+    color: white !important;
+    font-size: 64px !important;
+}
+/* .progress-bar{
+    margin: 100px !important;
+} */
+.abs{
+    position: absolute;
+    top: 28%;
+    right: 25%;
+    font-size: 30px;
+    color: white;
+    transition: 0.2s  ease-in-out !important;
+    
+}
+.abs:hover{
+    color: red !important;
+}
+.relative{
+    position: relative;
+    width: 100% !important;
+    /* margin: 0 auto !important; */
+    
+}
+
+.progress{
+    background-color:rgb(160, 37, 37) !important;
+    
+}
+
+.asd{
+    /* font-weight:  */
+
+    transition: 0.3s ease-in-out !important;
+}
+ .asd:hover{
+    color: red !important;
+    
+}
+.bor{
+    border: 3px solid rgba(235, 126, 126, 0.205);
+    padding: 5px 10px;
+    font-size: 20px;
+    /* box-shadow: 3px 3px 3px 3px; */
+    transition: 0.3s ease-in-out !important;
+    margin: 10rm;
+    
+}
+.bor:hover{
+    /* color: rgba(255, 0, 0, 0.192); */
+    box-shadow: 0px 10px 5px 0px;
+}
+.footer{
+    padding: 20px 0px;
+    margin: 0 auto;
+    background-color: black;
+    color: red;
+
+}
+.cent{
+    background-image: url('../img/heart-beat-png.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: black;
+    /* height: 700px; */
+    padding: 50px 0px;
+    color: red;
+}
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    border-bottom: 10px solid #3498db;
+    width: 60px;
+    height: 60px;
+    margin: 0px auto;
+    display: none;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+/**/
+#password, #email,.form-control, .btn{
+    border-radius: 0 !important
+}
+.form-control {
+    outline: 0!important;
+    box-shadow: none!important;
+}
+/**/
+
+.your-class {
+    position:fixed;
+    bottom:10px;
+    right:20px;
+    /* font-size: 18px; */
+    color: red;
+    
+}
+@media screen and (min-width: 768px){
+    .abs{
+    position: absolute;
+    top: 30%;
+    right: 1%;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 60px;
+    color: white;
+    transition: 0.2s  ease-in-out !important;
+    
+}
+}
+
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+ #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(255, 255, 255); /* Black background color */
+    color: rgb(0, 0, 0); /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
